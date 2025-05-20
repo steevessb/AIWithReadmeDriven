@@ -1,0 +1,19 @@
+{
+  "name": "report-viewer",
+  "version": "1.0.0",
+  "description": "React-based report viewer for NUnit XML test results",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
