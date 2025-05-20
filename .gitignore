@@ -1,0 +1,81 @@
+# PowerShell module files
+*.psd1
+*.psm1
+*.ps1xml
+*.dll
+*.mof
+
+# PowerShell script output
+*.log
+*.txt
+*.csv
+*.json
+*.xml
+*.html
+!report-viewer/package.json
+
+# Test Results
+TestResults/
+*.TestResults.xml
+*TestsResults.xml
+DiscoveredResources.cache.json
+
+# Node.js dependencies
+node_modules/
+report-viewer/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backup files
+*~
+*.bak
+*.backup
+Backup*/
+*.orig
+
+# Generated files 
+# Comment this out if you want to track generated test files
+# DeploymentsSpecification.Tests.ps1
+
+# Cache files
+*.cache
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Exclude local settings files
+*.local.ps1
+
+# Exception for specific files we want to track despite wildcards above
+!AzureFixtures.psd1
