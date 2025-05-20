@@ -26,7 +26,7 @@ if ($fixtures.expectedStorageAccounts) {
 
     foreach ($storageAccount in $fixtures.expectedStorageAccounts) {
         $testContent += "    Context \"$($storageAccount.FriendlyName) Deployment Validation\" {"
-        $testContent += "        It \"Should exist\" { \"Test logic here\" }"
+        $testContent += "        It \"Should exist\" { \$actual = Get-AzStorageAccount -Name '$($storageAccount.Name)'; \$actual | Should -Not -BeNullOrEmpty }"
         $testContent += "    }"
     }
 
